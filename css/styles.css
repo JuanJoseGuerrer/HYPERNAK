@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&display=swap');
+@font-face{
+    font-family: "miFuente";
+    src: url(../recourses/Trade-Gothic-Font.zip) format("truetype");
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#nav_main{
+    background-color: white;
+    display: flex;
+    padding: 25px 30px;
+    
+}
+
+#title{
+    color: #ea391d;
+    
+    font-family: 'MiFuente', sans-serif;
+    font-weight:800;
+    position: relative;
+    left: 0px;
+    font-size: 22px;
+   
+    
+    
+}
+
+#subpages{
+    position: absolute;
+    left: 28%;
+    justify-content: center;
+    padding-top: 6px;
+    
+    
+
+}
+
+#subpages a{
+    position: relative;
+    padding:0 20px;
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-family: "Rubik", sans-serif;
+    font-weight:500;
+    font-size: 15px;
+}
+
+#subpages a:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#subpages a:hover{
+    color: black;
+}
+
+#subpages a:hover:after{
+    width: 100%;
+}
+
+
+#search{
+    position: absolute;
+    left: 70%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: solid 1px;
+    width: 25px;
+    
+    
+}
+
+#bars{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:25px;
+}
+
+#hero {
+    overflow: hidden;
+}
+
+
+#hero div{
+    height: 450px;
+    background-image: url("https://eurobike.mx/cdn/shop/files/542035_MY24_KTM_250_DUKE_Action_Cat_A_Action_1600x.jpg?v=1697412207");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    animation: zoom 15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    
+
+}
+
+@keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+}
+
+#hero h2{
+    font-size: 50px;
+}
+#hero h2, #hero p{
+    position: relative;
+    top: 150px;
+    left: 20px;
+    font-family: "miFuente", sans-serif;
+}
+
+#layer{
+    background-color: rgba(39, 39, 39, 0.297);
+    width: 100%;
+    height: 100%;
+}
+
+#content{
+    height: 1500px;
+}
+
