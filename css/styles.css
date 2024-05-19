@@ -6,52 +6,46 @@
     font-family: "miFuente";
     src: url(../recourses/Trade-Gothic-Font.zip) format("truetype");
 }
+
+/* selector universal*/
 *{
     margin: 0;
     padding: 0;
-
 }
 
 
-
+/*-------------------------------------------Header---------------------------------------------------*/
 #nav_main{
     background-color: white;
     display: flex;
-    padding: 25px 30px;
-    
+    padding: 22px 30px;   
 }
 
 #title{
     color: #ea391d;
-    
     font-family: 'MiFuente', sans-serif;
     font-weight:800;
     position: relative;
     left: 0px;
-    font-size: 22px;
-   
-    
-    
+    font-size: 25px; 
 }
 
 #subpages{
     position: absolute;
-    left: 30%;
+    left: 27%;
     justify-content: center;
     padding-top: 6px;
-    
-    
-
 }
 
 #subpages a{
     position: relative;
-    padding:0 20px;
+    padding:0 0px;
     text-decoration: none;
     color: #5e5e5e;
     font-family: "Rubik", sans-serif;
     font-weight:500;
-    font-size: 15px;
+    font-size: 18px;
+    margin-right: 40px;
 }
 
 #subpages a:after{
@@ -64,6 +58,7 @@
     bottom: -10px;
     transition: 0.3s;
 }
+
 #subpages a:hover{
     color: black;
 }
@@ -71,10 +66,6 @@
 #subpages a:hover:after{
     width: 100%;
 }
-
-
-    
-
 
 #bars{
     position: absolute;
@@ -93,45 +84,97 @@
 
 .icons img{
     width: 22px;
-    height: 22px;
-    
+    height: 22px;  
 }
 
 
+/*-----------------------------------------------Hero------------------------------------------------*/
 #hero {
     overflow: hidden;
 }
 
-
 #hero div:first-child{
-    height: 500px;
-    background-image: url("https://eurobike.mx/cdn/shop/files/542035_MY24_KTM_250_DUKE_Action_Cat_A_Action_1600x.jpg?v=1697412207");
+    height: 660px;
+    background-image: url("../recourses/Fondo1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    
-    
-
 }
 
+#hero h3{
+    font-size: 70px;
+}
 
 #hero h2{
-    font-size: 50px;
-}
-#hero h2, #hero p{
-    position: relative;
-    top: 150px;
-    left: 50px;
-    font-family: "miFuente", sans-serif;
+    color: rgba(255, 255, 255, 0.484);
+    font-size: 65px;
+    position: absolute;
+    top: 540px;
+    
+    font-family: "Rubik", sans-serif;
+    
+    
+    
 }
 
+#hero h3, #hero p{
+    position: relative;
+    top: 100px;
+    left: 70px;
+    font-family: "MiFuente", sans-serif;
+    margin-bottom: 20px;
+}
+
+#hero p{
+    width: 300px;
+}
+
+#b1, #b2{
+    
+    position: relative;
+    top: 150px;
+    font-size: 20px;
+    
+    height: 35px;
+    width: 160px;
+    left: 50px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight:500;
+    
+}
+
+#b1{
+    background-color: #e56402ce;
+    color: #ffffff;
+}
+
+#b2{
+    background-color: #2d2d2df2;
+    color: white;
+}
+
+#b1:hover{
+    background-color: #9e46039e;
+}
+
+#b2:hover{
+    background-color: #7272728e;
+
+}
 #layer{
-    background-color: rgba(39, 39, 39, 0.297);
+    background-color: rgba(39, 39, 39, 0.509);
     width: 100%;
     height: 100%;
 }
 
+
+/*----------------------------------------content----------------------------------------------------*/
 #content{
     height: 1500px;
 }
 
+
+/*-------------------------------------------footer--------------------------------------------------*/
