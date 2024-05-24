@@ -16,10 +16,31 @@
 
 /*-------------------------------------------Header---------------------------------------------------*/
 #nav_main{
-    background-color: white;
+    background-color: #f7f7f7;
     display: flex;
-    padding: 22px 30px;   
+    padding: 22px 20px 22px 25px;  
+    position: fixed; 
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-bottom:solid 1px #858484c2;
 }
+
+#nav_main.desplazar {
+    
+    z-index: 10;
+    transition-duration: 1.5s;
+    background-color: #858484c2;
+    backdrop-filter: blur(5px);
+}
+
+#subpages.desplazar a{
+    transition: 1s;
+    color: rgb(57, 55, 55);   
+}
+
 
 #title{
     color: #ea391d;
@@ -69,17 +90,17 @@
 
 #bars{
     position: absolute;
-    right: 50px;
+    right: 80px;
 }
 
 #search{
     position:absolute;
-    right: 100px;
+    right: 125px;
 }
 
 #interrogation{
     position: absolute;
-    right: 150px;
+    right: 170px;
 }
 
 .icons img{
@@ -91,11 +112,26 @@
 /*-----------------------------------------------Hero------------------------------------------------*/
 #hero {
     overflow: hidden;
+    margin-top: 65px;
 }
 
+/*
+#videoFondo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+}
+*/
 #hero div:first-child{
     height: 660px;
-    background-image: url("../recourses/Fondo1.jpg");
+    background-image: url("../recourses/fondo1.jpg");
+    
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -172,9 +208,50 @@
 
 
 /*----------------------------------------content----------------------------------------------------*/
-#content{
-    height: 1500px;
+#Vmodel{
+    height: 620px;
+    background-color: #f7f7f7;
 }
 
+
+
+#m1 img{
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 800px;
+}
+
+#m1 img:hover{
+    transition-duration: 0.3s;
+    height: auto;
+    width: 820px;
+    right: 0px;
+}
+
+#m1 h2{
+    position: absolute;
+    left: 80px;
+    margin-top: 120px;
+    font-size: 250px;
+    z-index: 10;
+    color: #5e5e5e2f;
+    font-family: "miFuente", sans-serif;
+}
+
+#m1 p{
+    position: relative;
+    z-index: 10;
+    top: 340px;
+    font-size: 50px;
+    left: 150px;
+    font-family: "Anton", sans-serif;
+}
+
+#AllModels{
+    height: 650px;
+    background-color: #ea391d;
+}
 
 /*-------------------------------------------footer--------------------------------------------------*/
