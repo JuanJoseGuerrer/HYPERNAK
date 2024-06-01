@@ -1,0 +1,43 @@
+
+body{
+    
+}
+
+#content1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10%;
+    
+}
+
+#content1 div{
+    height: 300px;
+    width: 300px;
+   
+    margin: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgba(34, 33, 33, 0.733);
+    
+}
+
+#content1 div:hover{
+    transition-duration: 0.5s;
+    height: 320px;
+    width: 320px;
+   
+    margin: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(170, 164, 164);
+}
+
+#content1 img{
+    width: 100%;
+    height: 80%;
+    z-index: 10;
+}
