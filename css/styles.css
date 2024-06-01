@@ -166,8 +166,25 @@
     margin-bottom: 20px;
 }
 
+#hero2{
+    display: flex;
+    justify-content: center;
+}
+
 #hero2 p{
-    width: 300px;
+    width: 500px;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#hero2 h3{
+    color: white;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #b1, #b2{
@@ -213,7 +230,7 @@
 
 #hero2{
     z-index: -10;
-    height: 500px;
+    height: 400px;
     background-color: rgb(28, 28, 28);
 }
 
@@ -344,6 +361,7 @@
     display: flex;
     justify-content: center;
     z-index: 7;
+    overflow: hidden;
     
     
     
@@ -360,6 +378,7 @@
     display: flex;
     justify-content: center;
     z-index: 8;
+    overflow: hidden;
 }
 
 
